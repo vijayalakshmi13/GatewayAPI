@@ -1,0 +1,31 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/WeatherForecasttest",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5278
+        }
+      ],
+      "UpstreamPathTemplate": "/getweather"
+    }
+    //{
+    //  "DownstreamPathTemplate": "/api/product/getproduct",
+    //  "DownstreamScheme": "http",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 54877
+    //    }
+    //  ],
+    //  "UpstreamPathTemplate": "/getproduct"
+    //}
+    
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5035"
+  }
+
+}
