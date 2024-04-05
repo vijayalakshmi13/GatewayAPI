@@ -1,7 +1,7 @@
 {
   "Routes": [
-    {
-      "DownstreamPathTemplate": "/WeatherForecasttest",
+    {     
+      "DownstreamPathTemplate": "/api/Currency/Upload",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -9,19 +9,30 @@
           "Port": 5278
         }
       ],
-      "UpstreamPathTemplate": "/getweather"
+      "UpstreamPathTemplate": "/upload"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Currency/Download",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5278
+        }
+      ],
+      "UpstreamPathTemplate": "/download"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Currency",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5278
+        }
+      ],
+      "UpstreamPathTemplate": "/getcurrency"
     }
-    //{
-    //  "DownstreamPathTemplate": "/api/product/getproduct",
-    //  "DownstreamScheme": "http",
-    //  "DownstreamHostAndPorts": [
-    //    {
-    //      "Host": "localhost",
-    //      "Port": 54877
-    //    }
-    //  ],
-    //  "UpstreamPathTemplate": "/getproduct"
-    //}
     
   ],
   "GlobalConfiguration": {
