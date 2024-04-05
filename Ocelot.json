@@ -36,7 +36,7 @@
     
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:5035"
+    "BaseUrl": "https://gatewayapiviji.azurewebsites.net"
   }
 
 }
